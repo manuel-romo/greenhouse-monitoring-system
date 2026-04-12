@@ -2,8 +2,10 @@ package com.greenhouse.sensormanagementservice.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @Entity
 @Table(name = "sensors")
 public class Sensor {
@@ -16,7 +18,7 @@ public class Sensor {
     private String serialNumber;
 
     @ManyToOne
-    @JoinColumn(name = "format_id")
+    @JoinColumn(name = "format")
     private Format format;
 
     @Column(name = "greenhouse_id")

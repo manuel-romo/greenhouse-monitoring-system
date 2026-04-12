@@ -1,7 +1,7 @@
 package com.greenhouse.sensormanagementservice.controller;
 
-import com.greenhouse.sensormanagementservice.dto.FormatRequest;
-import com.greenhouse.sensormanagementservice.dto.FormatResponse;
+import com.greenhouse.sensormanagementservice.dto.FormatRequestDTO;
+import com.greenhouse.sensormanagementservice.dto.FormatResponseDTO;
 import com.greenhouse.sensormanagementservice.entity.Format;
 import com.greenhouse.sensormanagementservice.service.FormatService;
 import lombok.RequiredArgsConstructor;
@@ -15,10 +15,10 @@ public class FormatController {
     private final FormatService formatService;
 
     @PostMapping
-    public FormatResponse createFormat(@RequestBody FormatRequest request) {
+    public FormatResponseDTO createFormat(@RequestBody FormatRequestDTO request) {
 
         Format savedFormat = formatService.saveFormat(request.getName());
-        FormatResponse response = new FormatResponse();
+        FormatResponseDTO response = new FormatResponseDTO();
         response.setId(savedFormat.getId());
         response.setName(savedFormat.getName());
 

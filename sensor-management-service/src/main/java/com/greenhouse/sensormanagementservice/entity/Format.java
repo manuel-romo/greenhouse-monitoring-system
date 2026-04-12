@@ -2,8 +2,10 @@ package com.greenhouse.sensormanagementservice.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @Entity
 @Table(name = "formats")
 public class Format {

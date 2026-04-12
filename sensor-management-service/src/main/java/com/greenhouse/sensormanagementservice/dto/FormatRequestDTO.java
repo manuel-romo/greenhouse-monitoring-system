@@ -1,8 +1,10 @@
 package com.greenhouse.sensormanagementservice.dto;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-public class FormatRequest {
+@NoArgsConstructor
+public class FormatRequestDTO {
     private String name;
 }
