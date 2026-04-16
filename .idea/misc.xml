@@ -6,7 +6,14 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/sensor-management-service/pom.xml" />
+        <option value="$PROJECT_DIR$/greenhouse-managment-service/pom.xml" />
+        <option value="$PROJECT_DIR$/greenhouse-management-service/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/greenhouse-managment-service/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">

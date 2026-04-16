@@ -9,9 +9,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>sensor-management-service</artifactId>
+    <artifactId>greenhouse-management-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sensor-management-service</name>
+    <name>greenhouse-management-service</name>
 
     <dependencies>
         <dependency>
@@ -60,9 +60,9 @@
         </dependency>
 
         <dependency>
-            <groupId>io.grpc</groupId>
-            <artifactId>grpc-netty-shaded</artifactId>
-            <version>${grpc.version}</version>
+            <groupId>net.devh</groupId>
+            <artifactId>grpc-server-spring-boot-starter</artifactId>
+            <version>3.1.0.RELEASE</version>
         </dependency>
     </dependencies>
 

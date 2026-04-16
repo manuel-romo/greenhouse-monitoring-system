@@ -1,4 +1,4 @@
-package com.greenhouse.sensormanagementservice.exceptions;
+package com.greenhouse.sensormanagementservice.exception;
 
 public class BusinessException extends RuntimeException{
 

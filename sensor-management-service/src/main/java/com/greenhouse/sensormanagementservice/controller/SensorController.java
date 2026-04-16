@@ -3,6 +3,7 @@ package com.greenhouse.sensormanagementservice.controller;
 import com.greenhouse.sensormanagementservice.dto.SensorRequestDTO;
 import com.greenhouse.sensormanagementservice.dto.SensorResponseDTO;
 import com.greenhouse.sensormanagementservice.service.SensorService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +20,7 @@ public class SensorController {
     private final SensorService sensorService;
 
     @PostMapping
-    public ResponseEntity<SensorResponseDTO> create(@RequestBody SensorRequestDTO request) {
+    public ResponseEntity<SensorResponseDTO> create(@Valid @RequestBody SensorRequestDTO request) {
 
         SensorResponseDTO responseData = sensorService.saveSensor(request);
 
